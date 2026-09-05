@@ -2995,14 +2995,6 @@
 	};
 
 	chosen {
-		linux,uefi-mmap-size = <0x848>;
-		u-boot,version = "2025.07-rc1-gdb8b0adbbbec";
-		bootargs = "initrd=\\d630de4c407343a0ab41f043364b7e4a\\6.16.0-geffa8626771a\\initrd.img-6.16.0-geffa8626771a root=UUID=290d6df8-bd52-4b84-bdab-f47272377483 clk_ignore_unused pd_ignore_unused audit=0 deferred_probe_timeout=30 systemd.machine_id=d630de4c407343a0ab41f043364b7e4a";
-		linux,uefi-mmap-start = <0x01 0x2ecb2068>;
-		kaslr-seed = <0x00 0x00>;
-		linux,uefi-mmap-desc-size = <0x28>;
-		linux,uefi-mmap-desc-ver = <0x01>;
-		linux,uefi-system-table = <0x01 0x3fdfcf20>;
 		stdout-path = "serial0:115200n8";
 	};
 
