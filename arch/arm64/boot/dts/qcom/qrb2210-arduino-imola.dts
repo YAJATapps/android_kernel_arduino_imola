@@ -655,6 +655,10 @@
 	status = "okay";
 };
 
+&usb_dwc3 {
+	dr_mode = "host";
+};
+
 &usb_dwc3_hs {
 	remote-endpoint = <&anx_hs_in>;
 };
