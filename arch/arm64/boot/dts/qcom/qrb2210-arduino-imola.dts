@@ -251,6 +251,7 @@
 
 &i2c1 {
 	clock-frequency = <100000>;
+	/delete-property/ dmas;
 
 	status = "okay";
 
@@ -262,6 +263,7 @@
 		vdd18-supply = <&pm4125_l15>;
 		vdd33-supply = <&vreg_anx_30>;
 		analogix,audio-enable;
+		analogix,usbc-pd-enable;
 		analogix,lane0-swing = /bits/ 8 <0x14 0x54 0x64 0x74>;
 		analogix,lane1-swing = /bits/ 8 <0x14 0x54 0x64 0x74>;
 
@@ -276,6 +278,7 @@
 
 			pd-revision = /bits/ 8 <0x03 0x00 0x00 0x00>;
 			op-sink-microwatt = <15000000>;
+			source-pdos = <PDO_FIXED(5000, 3000, PDO_FIXED_USB_COMM)>;
 			sink-pdos = <PDO_FIXED(5000, 3000, PDO_FIXED_USB_COMM)
 				     PDO_VAR(5000, 20000, 3000)>;
 
