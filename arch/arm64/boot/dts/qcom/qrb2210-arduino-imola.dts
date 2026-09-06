@@ -2610,6 +2610,20 @@
 					vdd_s3-supply = <0x15>;
 					vdd_s4-supply = <0x15>;
 
+					s3 {
+						regulator-max-microvolt = <0x14a140>;
+						regulator-boot-on;
+						regulator-min-microvolt = <0x14a140>;
+						phandle = <0x16>;
+					};
+
+					s4 {
+						regulator-max-microvolt = <0x1f9dc0>;
+						regulator-boot-on;
+						regulator-min-microvolt = <0x1f9dc0>;
+						phandle = <0x17>;
+					};
+
 					l15 {
 						regulator-max-microvolt = <0x1b7740>;
 						regulator-allow-set-load;
@@ -2617,13 +2631,6 @@
 						regulator-always-on;
 						regulator-min-microvolt = <0x1b7740>;
 						phandle = <0x33>;
-					};
-
-					s3 {
-						regulator-max-microvolt = <0x14a140>;
-						regulator-boot-on;
-						regulator-min-microvolt = <0x14a140>;
-						phandle = <0x16>;
 					};
 
 					l13 {
@@ -2684,13 +2691,6 @@
 						regulator-boot-on;
 						regulator-min-microvolt = <0x1b7740>;
 						phandle = <0x99>;
-					};
-
-					s4 {
-						regulator-max-microvolt = <0x1f9dc0>;
-						regulator-boot-on;
-						regulator-min-microvolt = <0x1f9dc0>;
-						phandle = <0x17>;
 					};
 
 					l14 {
